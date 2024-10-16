@@ -1,7 +1,7 @@
 
-// Define the structure of the props using type
+
 type CheckBoxProps = {
-  status: boolean;  // Explicitly defining the type of the status prop
+  status: boolean;  
 };
 
 const CheckBox = ({ status }: CheckBoxProps) => {

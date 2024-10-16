@@ -2,7 +2,7 @@ import React from 'react';
 import FormInput from '../../base/FormInput';
 import FormButton from '../../base/FormButton';
 
-// Define the structure of the props using type
+
 type FormProps = {
   text: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -10,7 +10,7 @@ type FormProps = {
   buttonName?:string;
 };
 
-// Regular function component definition
+
 const Form = ({ text, onChange, onSubmit }: FormProps) => {
   return (
     <div className="flex my-5">

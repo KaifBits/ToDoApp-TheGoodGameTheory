@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../asset/Todologo.png';
+import logo from '../../assets/Todologo.png';
 import FormList from '../../components/custom/FormList';
 import Form from '../../components/custom/Form';
 
@@ -18,7 +18,7 @@ const HomeView = ({ text, onChange, onSubmit, list, onCheck,onDelete }: HomeView
     <div className="w-full flex flex-col justify-center items-center">
       <img src={logo} alt="logo" className="my-5" />
       <Form text={text} onChange={onChange} onSubmit={onSubmit} />
-      <div className="w-1/2 flex flex-col items-center justify-center bg-stone-200 rounded-md">
+      <div className="w-1/2 flex flex-col items-center justify-center bg-cyan-300 rounded-md">
         {list.map((val, index) => {
           console.log(val.text);
           return (

@@ -2,7 +2,7 @@ import React from 'react';
 import CheckBox from '../../base/CheckBox';
 import DeleteButton from '../../base/DeleteButton';
 
-// Define the structure of the props using type
+
 type FormListProps = {
   text: string;
   status: boolean;

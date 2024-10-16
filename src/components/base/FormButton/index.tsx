@@ -1,5 +1,5 @@
 
-// Define the structure of the props using type
+
 type FormButtonProps = {
   onSubmit: () => void;
   buttonName:string; 

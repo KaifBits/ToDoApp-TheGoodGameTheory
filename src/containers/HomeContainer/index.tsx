@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import HomeView from '../../views/HomeView';
 
-// Define the structure of your task object using type
+// Define the structure of the task object using type
 type Task = {
   text: string;
   status: boolean;
@@ -27,21 +27,20 @@ const HomeContainer = () => {
 
   // Add item to list
   const handleSubmit = () => {
-    let currentList: Task[] = [];
     const storedList = localStorage.getItem('list');
-    if (storedList) {
-      currentList = JSON.parse(storedList);
-      setList(currentList);
-    }
-
+    const currentList: Task[] = storedList ? JSON.parse(storedList) : [];
+  
+    // Check if text input is not empty
     if (text) {
-      const obj: Task = { text: text, status: false };
-      currentList.push(obj);
-      setList(currentList);
-      localStorage.setItem('list', JSON.stringify(currentList));
-      setText(''); 
+      
+      const newTask: Task = { text: text, status: false }; 
+      const updatedList = [...currentList, newTask];
+      setList(updatedList);
+      localStorage.setItem('list', JSON.stringify(updatedList));
+      setText('');
     }
   };
+  
 
   // Checkbox toggle
   const handleCheck = (id: number) => {

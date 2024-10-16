@@ -1,9 +1,9 @@
 import React from 'react';
 
-// Define the structure of the props using type
+
 type FormInputProps = {
   text: string; // The input text
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; // Function to handle text change
+  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; 
 };
 
 const FormInput = ({ text, onChange }: FormInputProps) => {

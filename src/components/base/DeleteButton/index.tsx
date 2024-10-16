@@ -1,8 +1,8 @@
-import React from 'react';
+
 
 const DeleteButton = () => {
   return (
-    <button className='px-2 rounded-lg w-14 h-10 bg-slate-500'>Delete</button>
+    <button className='text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 h-9'>Delete</button>
   )
 }
 
