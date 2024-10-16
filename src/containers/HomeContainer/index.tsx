@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import HomeView from '../../views/HomeView';
 
-// Define the structure of the task object using type
+// Define the structure of the task object using type -->
 type Task = {
   text: string;
   status: boolean;
