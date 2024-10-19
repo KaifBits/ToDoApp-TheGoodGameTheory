@@ -1,6 +1,6 @@
-import React from 'react';
+
 import CheckBox from '../../base/CheckBox';
-import DeleteButton from '../../base/DeleteButton';
+import FormButton from '../../base/FormButton';
 
 
 type FormListProps = {
@@ -9,6 +9,13 @@ type FormListProps = {
   id: number;
   onCheck: (id: number) => void;
   onDelete: (id: number) => void;
+  type?:'submit'|'delete';
+  variant?:'primary' | 'secondary' | 'success' | 'danger' | 'link';
+  buttonName?:string; 
+  fontSize?: string;
+
+  
+ 
 };
 
 const FormList = ({ text, status, id, onCheck ,onDelete}: FormListProps) => {
@@ -21,9 +28,7 @@ const FormList = ({ text, status, id, onCheck ,onDelete}: FormListProps) => {
       <CheckBox status={status} />
       </div>
       <div className="text-xl font-semibold h-auto text-black w-full">{text}</div>
-      <div onClick={()=>onDelete(id)} className='w-20 flex justify-end '>
-      <DeleteButton/>
-      </div>
+     <FormButton  type='delete' variant='danger' buttonName="delete" fontSize='text-lg'  onDelete={onDelete} id={id}/>
     </div>
   );
 };

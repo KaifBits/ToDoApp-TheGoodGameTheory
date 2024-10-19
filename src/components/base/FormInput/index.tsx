@@ -2,18 +2,21 @@ import React from 'react';
 
 
 type FormInputProps = {
-  text: string; // The input text
+  type?:string;
+  placeholder?:string;
+  text?: string; // The input text
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void; 
 };
 
-const FormInput = ({ text, onChange }: FormInputProps) => {
+const FormInput = ({ text, onChange,placeholder,type }: FormInputProps) => {
   return (
     <div>
       <input
-        type="text"
+        type={type}
         value={text}
         onChange={onChange}
-        className="border border-gray-400 py-[7px]"
+        className="border border-gray-400 py-[7px] px-2 w-56"
+        placeholder={placeholder}
       />
     </div>
   );

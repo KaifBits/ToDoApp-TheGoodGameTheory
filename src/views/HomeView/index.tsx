@@ -29,6 +29,7 @@ const HomeView = ({ text, onChange, onSubmit, list, onCheck,onDelete }: HomeView
               id={index}
               onCheck={onCheck}
               onDelete={onDelete}
+              
             />
           );
         })}

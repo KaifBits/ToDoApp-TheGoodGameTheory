@@ -1,8 +1,9 @@
-import React from 'react';
-import HomePage from './pages/Homepage';
+
+import { RouterProvider } from 'react-router-dom';
+import { approute } from './routes/AppRouter';
 
 function App() {
-  return <HomePage />;
+  return <RouterProvider router={approute}/>;
 }
 
 export default App;
