@@ -17,8 +17,8 @@ const SigninContainer = () => {
     setPassword(e.target.value)
 }
 
-const handleSubmit=()=>{
-  
+const handleSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
+  e.preventDefault();
 signInWithEmailAndPassword(auth, email, password)
   .then((userCredential) => {
     // Signed in 

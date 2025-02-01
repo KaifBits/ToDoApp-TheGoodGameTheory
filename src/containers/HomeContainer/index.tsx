@@ -67,12 +67,7 @@ const HomeContainer = () => {
   return (
     <div>
       <HomeView
-        text={text}
-        onChange={handleChange}
-        onSubmit={handleSubmit}
-        list={list}
-        onCheck={handleCheck}
-        onDelete={handleDelete}
+        
       />
     </div>
   );

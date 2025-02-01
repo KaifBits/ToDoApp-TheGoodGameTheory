@@ -18,7 +18,9 @@ const SignupContainer = () => {
   const handleEmail=(e:React.ChangeEvent<HTMLInputElement>)=>{
     setEmail(e.target.value)
 }
-const handleSubmit=()=>{
+const handleSubmit=(e: React.FormEvent<HTMLFormElement>)=>{
+  e.preventDefault(); // Prevent default form submission
+
     
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {

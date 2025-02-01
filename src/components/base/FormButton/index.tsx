@@ -18,7 +18,7 @@ const ButtonStyles=(variant:string)=>{
     case 'secondary':
       return 'bg-gray-500 text-white hover:bg-gray-600';
     case 'success':
-      return 'bg-green-500 text-white hover:bg-green-600';
+      return 'bg-yellow-400 text-black font-bold hover:bg-green-600';
     case 'danger':
       return 'bg-red-500 text-white hover:bg-red-600';
     case 'link':
@@ -30,7 +30,7 @@ const ButtonStyles=(variant:string)=>{
 }
 
 const FormButton = ({ type,variant,buttonName,fontSize,onSubmit,onDelete,id}: FormButtonProps) => {
-  const style=`${ButtonStyles(variant)} ${fontSize} rounded-full text-sm px-5 py-2.5 text-center mb-2 `
+  const style=`${ButtonStyles(variant)} ${fontSize} rounded-full  px-5 py-2.5 text-center mb-2   `
   return (
     <button
       className={style}
