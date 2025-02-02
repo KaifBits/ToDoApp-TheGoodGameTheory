@@ -57,7 +57,7 @@ const SignupView = ({username,email,password,success,handleUsername,handleEmail,
       </div>
 
       {/* Navigation Links */}
-      <nav className="flex flex-col mt-5 space-y-1 pl-8">
+      <nav className="flex flex-col mt-5 space-y-1 ">
       
       <Link
   to="/home"
@@ -166,7 +166,7 @@ const SignupView = ({username,email,password,success,handleUsername,handleEmail,
     </div>
       
     
-    <div className='w-1/4 h-auto py-10 flex flex-col justify-center items-center m-auto bg-opacity-10 bg-black rounded-lg shadow-lg border border-gray-700 p-6 space-y-6'>
+    <div className='lg:w-96 md:w-1/2 h-auto py-10 flex flex-col justify-center items-center m-auto bg-opacity-10 bg-black rounded-lg shadow-lg border border-gray-700 p-6 space-y-6'>
       <h2 className='text-3xl font-bold text-white'>Sign Up</h2>
       <p className='text-white'>🕒start playing less than 1 min</p>
       <form className='w-full flex flex-col space-y-4' onSubmit={onSubmit}>
